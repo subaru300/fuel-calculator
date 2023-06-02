@@ -19,10 +19,10 @@ body {
   flex-direction: row;
 }
 .main__block {
-  width: 50%;
-  min-width: 480px;
-  height: auto;
-  margin-top: 50px;
+  width: 100%;
+  /* min-width: 480px; */
+  height: 600px;
+  margin-top: 7%;
   margin-right: 20px;
   border: solid rgb(183, 183, 183);
   border-radius: 5px;
@@ -42,7 +42,10 @@ body {
 }
 .result {
   flex: 0.8;
-  margin: 283px 2vh 2vw 2vh;
+  margin: 263px 2vh 2vw 2vh;
+}
+#res__second {
+  margin-top: 355px;
 }
 .header {
   margin-left: 5%;
@@ -80,7 +83,7 @@ body {
   font-size: 20px;
   border: solid 1px;
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
 }
 
 .button {
@@ -92,7 +95,7 @@ body {
   width: 100%;
 }
 .second__button {
-  margin-top: 185px;
+  margin-top: 175px;
 }
 .button:hover {
   cursor: pointer;
@@ -108,7 +111,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-@media (max-width: 540px) {
+@media (max-width: 980px) {
   .wrapper {
     flex-direction: column;
   }
