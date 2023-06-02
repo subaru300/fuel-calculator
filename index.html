@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fuel.css" />
+    <title>Fuel Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main__block">
+        <div class="header">
+          <div class="icon__block">
+            <img class="icon" src="fuel.png" alt="icon" />
+          </div>
+          <div class="header__text__block">
+            <h1 class="header1">.fuel calculator</h1>
+            <h3 class="header3">.ride cost</h3>
+          </div>
+        </div>
+        <hr class="hr" />
+        <div class="main__block__main">
+          <div class="col__group">
+            <div class="col">
+              <p class="text">Input distance (kilometers):</p>
+              <input
+                value="0"
+                maxlength="5"
+                step="0.1"
+                type="number"
+                id="distanceId"
+                class="inputField"
+              />
+            </div>
+            <div class="col">
+              <p class="text">Average fuel consumption (liters/100km):</p>
+              <input
+                value="0"
+                maxlength="4"
+                step="0.1"
+                type="number"
+                id="consumptionId"
+                class="inputField"
+              />
+            </div>
+            <div class="col">
+              <p class="text">The cost of 1 liter fuel:</p>
+              <input
+                value="0"
+                maxlength="4"
+                step="0.1"
+                type="number"
+                id="costId"
+                class="inputField"
+              />
+            </div>
+
+            <button onclick="calculateCost()" class="button">Calculate</button>
+          </div>
+          <div class="result">
+            <p class="text">Required fuel (liters):</p>
+            <div class="screen" id="screen__result__liters">0</div>
+            <p class="text">Cost:</p>
+            <div class="screen" id="screen__result">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="main__block">
+        <div class="header">
+          <div class="header__text__block">
+            <h3 class="header3 second_header">.average fuel consumption</h3>
+          </div>
+        </div>
+        <hr class="hr" />
+        <div class="main__block__main">
+          <div class="col__group">
+            <div class="col">
+              <p class="text">I fill up the fuel (liters):</p>
+              <input
+                value="0"
+                maxlength="5"
+                step="0.1"
+                type="number"
+                id="quantityId"
+                class="inputField"
+              />
+            </div>
+            <div class="col">
+              <p class="text">and I'm passing (kilometers):</p>
+              <input
+                value="0"
+                maxlength="4"
+                step="0.1"
+                type="number"
+                id="passedId"
+                class="inputField"
+              />
+            </div>
+
+            <button onclick="calculateCost()" class="button second__button">
+              Calculate
+            </button>
+          </div>
+          <div class="result">
+            <p class="text">Сonsumption (liters/100km):</p>
+            <div class="screen" id="screen__result__сonsumption">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="fuel.js"></script>
+  </body>
+</html>
