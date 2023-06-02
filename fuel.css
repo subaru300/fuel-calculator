@@ -108,7 +108,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-@media (max-width: 980px) {
+@media (max-width: 540px) {
   .wrapper {
     flex-direction: column;
   }
