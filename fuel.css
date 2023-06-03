@@ -126,5 +126,6 @@ input::-webkit-inner-spin-button {
   }
   .main__block {
     margin: auto;
+    margin-bottom: 10px;
   }
 }
