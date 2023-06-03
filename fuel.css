@@ -89,10 +89,13 @@ body {
   border: solid 1px;
   border-radius: 5px;
   background-color: #85c052;
-  width: 100%;
+  width: 75%;
+  text-align: center;
 }
 .second__button {
   margin-top: 185px;
+  width: 75%;
+  text-align: center;
 }
 .button:hover {
   cursor: pointer;
